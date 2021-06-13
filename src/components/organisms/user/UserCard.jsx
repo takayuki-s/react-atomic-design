@@ -1,7 +1,7 @@
 export const UserCard = () => {
   return (
     <div>
-      <img alt="プロフィール" />
+      <img alt="プロフィール" src="https://source.unsplash.com/oMpAz-DN-9I" />
       <p>名前</p>
       <dl>
         <dt>メール</dt>

@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Card } from "../../atoms/card/Card";
 
 export const UserCard = (props) => {
   const { user } = props;
   return (
-    <div>
+    <Card>
       <img height={160} width={160} alt={user.name} src={user.image} />
       <p>{user.name}</p>
       <SDl>
@@ -16,7 +17,7 @@ export const UserCard = (props) => {
         <dt>WEB</dt>
         <dd>{user.website}</dd>
       </SDl>
-    </div>
+    </Card>
   );
 };
 

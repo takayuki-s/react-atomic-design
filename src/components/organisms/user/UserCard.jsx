@@ -26,4 +26,9 @@ const SDl = styled.dl`
   dt {
     float: left;
   }
+  dd {
+    padding-left: 32px;
+    padding-bottom: 8px;
+    overflow-wrap: break-word;
+  }
 `;

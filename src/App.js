@@ -5,6 +5,7 @@
 // import { UserCard } from "./components/organisms/user/UserCard";
 // import { DefaultLayout } from "./components/templetes/DefaultLayout";
 // import { HeaderOnly } from "./components/templetes/HeaderOnly";
+import { RecoilRoot } from "recoil";
 import { UserProvider } from "./providers/UserProvider";
 import { Router } from "./router/Router";
 import "./styles.css";
@@ -31,8 +32,10 @@ export default function App() {
     //     <UserCard user={user} />
     //   </DefaultLayout>
     // </BrowserRouter>
-    <UserProvider>
-      <Router />
-    </UserProvider>
+    <RecoilRoot>
+      <UserProvider>
+        <Router />
+      </UserProvider>
+    </RecoilRoot>
   );
 }
